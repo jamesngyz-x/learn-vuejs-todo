@@ -8,7 +8,7 @@
       @keydown.enter="add"
     />
     <button @click="add()">Add</button>
-    <ul>
+    <ul class="task-list">
       <li v-for="(task, index) in tasks" :key="index">
         <span>{{ task }}</span>
         <span class="remove-button" @click="remove(index)">x</span>
@@ -42,6 +42,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.task-list {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
 .remove-button {
   padding-left: 1rem;
 }
