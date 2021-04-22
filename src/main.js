@@ -4,7 +4,7 @@ import router from "./router";
 
 Vue.config.productionTip = false;
 
-Vue.component("todo-component", require("./components/Todo.vue").default);
+Vue.component("todo-component", require("./components/TodoComponent.vue").default);
 
 new Vue({
   router,
